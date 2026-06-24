@@ -76,6 +76,8 @@ _start:
 
 ## Compile & Run
 
+> Test code still in progress to include
+
 ```bash
 # Single file
 nasm -f elf64 your_program.asm -o your_program.o
@@ -84,9 +86,9 @@ ld your_program.o -o your_program
 
 # Using the Makefile (builds suma, factorial, primo)
 make
-./suma
+./sumNum
 ./factorial
-./primo
+./primeNum
 
 # Clean up object files and binaries
 make clean
