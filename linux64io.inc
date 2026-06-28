@@ -24,7 +24,7 @@ section .bss
 %macro READ_STR 2
    mov rsi, %1
    mov rdx, %2
-   call print_str
+   call read_str
 %endmacro
 
 section .text
