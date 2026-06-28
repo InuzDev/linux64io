@@ -16,6 +16,17 @@ section .bss
    call print_int
 %endmacro
 
+%macro READ_INT 1
+   call read_int
+   mov %1, rax
+%endmacro
+
+%macro READ_STR 2
+   mov rsi, %1
+   mov rdx, %2
+   call print_str
+%endmacro
+
 section .text
 
 print_str:
